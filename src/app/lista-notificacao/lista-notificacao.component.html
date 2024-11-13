@@ -1,18 +1,24 @@
 <div class="container">
-    @for (notificacao of listaNotificacoes; track notificacao.id) {
-    <div class="card">
-        <p>Titulo: {{ notificacao.titulo }}</p>
-        <div class="conteudo">
-            <p>Descricao: {{ notificacao.descricao }}</p>
-            <p>Lida: {{ notificacaoFoiLida(notificacao) }}</p>
-        </div>        
-        <button>Marcar como lida</button>
+    <div class="lista">
+        @for (notificacao of listaNotificacoes; track notificacao.id) {
+            <div class="card">
+                <h2>Teste</h2>
+                <h5>id {{ notificacao.id }}</h5>
+                <div class="conteudo-notificacao">
+                    <p>sou uma notificacao</p>
+                    <div class="acoes">
+                        <p>Lida: Não</p>
+                        <button class="marcar-como-lida">Marcar como lida</button>
+                    </div>
+                </div>
+            </div>
+        } @empty {
+            <div>Não há notificações</div>
+        }
+        <div>
+            <button [routerLink]="['/']">Ir para o cadastro</button>
+        </div>
     </div>
-    } @empty {
-    <div>Não há notificações</div>
-    }
 
-    <div>
-        <button [routerLink]="['/']">Ir para o cadastro</button>
-    </div>
+
 </div>

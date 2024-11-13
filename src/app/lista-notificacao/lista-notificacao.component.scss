@@ -1,26 +1,58 @@
-.card {
-    padding: 1rem;
-    border-radius: 2px;
-    box-shadow: 1px 1px 3px #000;
-    max-width: 350px;
-    margin-bottom: 1rem;
-    background: #c3c3c3;
-}
-
 .container {
+    width: 100%;
+    min-height: 100vh;
     padding: 1rem;
-}
-
-.conteudo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    flex-direction: column;
+
+    background: #c5c5c5;
 }
 
 button {
-    margin-top: 1rem;
+    background: none;
     border: none;
     padding: .5rem;
-    border-radius: 2px;
+    border-radius: .2rem;
+
     cursor: pointer;
+}
+
+.lista {
+    min-width: 70%;
+    max-width: 100%;
+    background: #f1f1f1;
+    padding: 2rem;
+    border-radius: .2rem;
+
+    box-shadow: 3px 2px 5px #4b4b4b85;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.conteudo-notificacao {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: .2rem;
+    color: white;
+}
+
+.marcar-como-lida {
+    background: #4ac270;
 }
