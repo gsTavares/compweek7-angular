@@ -2,12 +2,12 @@
     <div class="lista">
         @for (notificacao of listaNotificacoes; track notificacao.id) {
             <div class="card">
-                <h2>Teste</h2>
+                <h2>{{ notificacao.titulo }}</h2>
                 <h5>id {{ notificacao.id }}</h5>
                 <div class="conteudo-notificacao">
-                    <p>sou uma notificacao</p>
+                    <p>{{ notificacao.descricao }}</p>
                     <div class="acoes">
-                        <p>Lida: Não</p>
+                        <p>{{ notificacaoFoiLida(notificacao) }}</p>
                         <button class="marcar-como-lida">Marcar como lida</button>
                     </div>
                 </div>
