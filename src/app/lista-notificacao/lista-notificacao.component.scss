@@ -1,0 +1,26 @@
+.card {
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px #000;
+    max-width: 350px;
+    margin-bottom: 1rem;
+    background: #c3c3c3;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    margin-top: 1rem;
+    border: none;
+    padding: .5rem;
+    border-radius: 2px;
+    cursor: pointer;
+}

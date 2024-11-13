@@ -1,0 +1,49 @@
+main {
+    color: white;
+    background: #302c2c;
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 2rem;
+    color: #000;
+    background: white;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+form {
+    padding: 1rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    padding: .5rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.cadastro {
+    background: #49df8a;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}

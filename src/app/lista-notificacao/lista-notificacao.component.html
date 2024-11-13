@@ -1,0 +1,18 @@
+<div class="container">
+    @for (notificacao of listaNotificacoes; track notificacao.id) {
+    <div class="card">
+        <p>Titulo: {{ notificacao.titulo }}</p>
+        <div class="conteudo">
+            <p>Descricao: {{ notificacao.descricao }}</p>
+            <p>Lida: {{ notificacaoFoiLida(notificacao) }}</p>
+        </div>        
+        <button>Marcar como lida</button>
+    </div>
+    } @empty {
+    <div>Não há notificações</div>
+    }
+
+    <div>
+        <button [routerLink]="['/']">Ir para o cadastro</button>
+    </div>
+</div>

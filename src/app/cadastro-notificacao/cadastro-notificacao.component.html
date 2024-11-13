@@ -1,0 +1,30 @@
+<main>
+    <header>
+        <p>Sistema de notificações</p>
+        <div>
+            Quantidade: 0
+        </div>
+    </header>
+
+    <section>
+        <h1>Cadastrar notificação</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="titulo">Titulo</label>
+                <input type="text" [formControl]="tituloFormControl" name="titulo">
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descricao</label>
+                <input type="text" [formControl]="descricaoFormControl" name="descricao">
+            </div>
+            <div>
+                <button class="cadastro" (click)="cadastrar()">Cadastrar</button>
+            </div>
+
+            <div>
+                <button class="botao-lista" [routerLink]="['/lista-notificacao']">Ir para a lista</button>
+            </div>
+        </form>
+    </section>
+</main>
