@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListaNotificacaoComponent } from './lista-notificacao/lista-notificacao.component';
 import { CadastroNotificacaoComponent } from './cadastro-notificacao/cadastro-notificacao.component';
+import { NotificacoesLidasComponent } from './notificacoes-lidas/notificacoes-lidas.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'lista-notificacao',
     component: ListaNotificacaoComponent
+  },
+  {
+    path: 'notificacoes-lidas',
+    component: NotificacoesLidasComponent
   }
 ];
 

@@ -10,6 +10,7 @@ import { listaNotificacaoReducer, quantidadeNotificacaoReducer } from './state/a
 import { ListaNotificacaoComponent } from './lista-notificacao/lista-notificacao.component';
 import { CadastroNotificacaoComponent } from './cadastro-notificacao/cadastro-notificacao.component';
 import { AppEffects } from './state/app.effects';
+import { NotificacoesLidasComponent } from './notificacoes-lidas/notificacoes-lidas.component';
 
 @NgModule({
   schemas: [
@@ -18,7 +19,8 @@ import { AppEffects } from './state/app.effects';
   declarations: [
     AppComponent,
     ListaNotificacaoComponent,
-    CadastroNotificacaoComponent
+    CadastroNotificacaoComponent,
+    NotificacoesLidasComponent
   ],
   imports: [
     BrowserModule,
