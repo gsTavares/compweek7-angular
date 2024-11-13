@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { listaNotificacaoReducer } from './state/app.reducers';
+import { listaNotificacaoReducer, quantidadeNotificacaoReducer } from './state/app.reducers';
 import { ListaNotificacaoComponent } from './lista-notificacao/lista-notificacao.component';
 import { CadastroNotificacaoComponent } from './cadastro-notificacao/cadastro-notificacao.component';
+import { AppEffects } from './state/app.effects';
 
 @NgModule({
   schemas: [
@@ -25,9 +26,10 @@ import { CadastroNotificacaoComponent } from './cadastro-notificacao/cadastro-no
     FormsModule,
     ReactiveFormsModule,
     StoreModule.forRoot({
-      listaNotificacao: listaNotificacaoReducer
+      listaNotificacao: listaNotificacaoReducer,
+      quantidadeNotificacao: quantidadeNotificacaoReducer
     }, {}),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([AppEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@
                     <p>{{ notificacao.descricao }}</p>
                     <div class="acoes">
                         <p>{{ notificacaoFoiLida(notificacao) }}</p>
-                        <button class="marcar-como-lida">Marcar como lida</button>
+                        <button class="marcar-como-lida" [disabled]="notificacao.lida" (click)="marcarComoLida(notificacao)">Marcar como lida</button>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { listaNotificacaoSelector } from '../state/app.selectors';
 import { Notificacao } from '../models/notification.model';
+import { ListaNotificacaoActions } from '../state/app.actions';
 
 @Component({
   selector: 'app-lista-notificacao',
@@ -33,6 +34,14 @@ export class ListaNotificacaoComponent implements OnInit {
     } else {
       return 'Não'
     }
+  }
+
+  marcarComoLida(notificacao: Notificacao) {
+    this.store.dispatch(ListaNotificacaoActions.marcarComoLida({
+      dados: {
+        idNotificacao: notificacao.id!
+      }
+    }))
   }
 
 }
